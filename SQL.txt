@@ -1,0 +1,11 @@
+CREATE DATABASE social_app;
+USE social_app;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO users (username, password)
+VALUES ('finny', 'finnysPassW0rd');
